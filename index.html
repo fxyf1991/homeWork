@@ -4,6 +4,7 @@
 <head>
   <title>李弢的个人简历</title>
   <link rel="stylesheet" href="./a.css">
+  <link rel="stylesheet" href="./loading.css">
   <script src="//at.alicdn.com/t/font_466844_nq16kl5iyqtzkt9.js"></script>
   <style type="text/css">
     .icon {
@@ -12,10 +13,26 @@
        fill: currentColor;
        overflow: hidden;
     }
+    .site-welcome{
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: #888; 
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    .site-welcome.active{
+      display: flex;
+    }
 </style>
 </head>
 
 <body>
+  <div id="siteWelcome" class="site-welcome active">
+      <div class="loading"></div>
+  </div>
+
   <div class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a class="logo" href="#" alt="logo" style="float: left;">
@@ -98,7 +115,7 @@
 
     <p class="downloadResume-wrapper">
     <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
-    </p>>
+    </p>
 
     <p class="selfIntroduction">
       李弢， 前端工程师，2018应届毕业，现在 辅仁大学资讯工程学系 读研。
@@ -196,6 +213,11 @@
     </div>
 
   </section>
+  <script>
+    setTimeout(function(){
+      siteWelcome.classList.remove('active')
+    },1000)
+  </script>
 </body>
 
 </html>
