@@ -210,13 +210,28 @@
     </div>
 
   </section>
+  <section class="message">
+    <h2>留言</h2>
+    <form id="postMessageForm" style="width: 700px;margin:50px auto;">
+      <label>姓名</label>
+      <input type="text" name="name">
+      <label>内容</label>
+      <input type="text" name="content">
+      <input type="submit" value="提交">
+    </form>
+    <ol id="messageList" class="messageList">
+
+    </ol>
+
+  </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
   <script src="./js/init-swiper.js"></script>
   <script src="./js/auto-slide-up.js"></script>
   <script src="./js/sticky-topbar.js"></script>
   <script src="./js/smoothly-navigation.js"></script>
-
+  <script src="//cdn1.lncld.net/static/js/3.5.0/av-min.js"></script>
+  <script src="./js/message.js"></script>
   <script>
     // setTimeout(function () {
     //   siteWelcome.classList.remove('active')
