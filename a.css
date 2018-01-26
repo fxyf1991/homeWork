@@ -411,6 +411,16 @@ section.portfolio .works{
   position: relative;
 }
 
+section.portfolio h2{
+margin-bottom: 32px;
+}
+
+section.portfolio .swiper-container{
+  width: 668px;
+  height: 501px;
+}
+
+
 [data-x].active{
   outline: 10px solid red;
 }
@@ -429,4 +439,29 @@ section.portfolio .works{
   100%{
     transform: translateY(0);
   }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.site-welcome {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #888;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-welcome.active {
+  display: flex;
 }
